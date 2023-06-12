@@ -22,9 +22,9 @@ public class Principal extends javax.swing.JFrame {
         super("MENU");
         initComponents();
         this.setLocationRelativeTo(null);
+        this.id = id;
         this.login = login;
         this.scoreArmazenado = score;    
-        this.id = id;
         this.nomeExib = nomeExib;
         btnTelaAddLixeira.setVisible(false);
         btnTelaAddLixo.setVisible(false);
