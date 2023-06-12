@@ -98,7 +98,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaAddLixeira.setIcon(new javax.swing.ImageIcon("D:\\Projeto\\src\\main\\java\\IMG\\addLixeira.png")); // NOI18N
+        btnTelaAddLixeira.setIcon(new javax.swing.ImageIcon("C:\\Users\\é o r's\\Desktop\\addLixeira.png")); // NOI18N
         btnTelaAddLixeira.setToolTipText("Adicionar Lixeira");
         btnTelaAddLixeira.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTelaAddLixeira.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +107,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaAddLixo.setIcon(new javax.swing.ImageIcon("D:\\Projeto\\src\\main\\java\\IMG\\addLixo.png")); // NOI18N
+        btnTelaAddLixo.setIcon(new javax.swing.ImageIcon("C:\\Users\\é o r's\\Desktop\\addLixo.png")); // NOI18N
         btnTelaAddLixo.setToolTipText("Adicionar lixo");
         btnTelaAddLixo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTelaAddLixo.addActionListener(new java.awt.event.ActionListener() {

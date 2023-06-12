@@ -185,7 +185,7 @@
     <Component class="javax.swing.JButton" name="btnTelaAddLixeira">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Projeto\src\main\java\IMG\addLixeira.png"/>
+          <Image iconType="2" name="C:\Users\&#xe9; o r&apos;s\Desktop\addLixeira.png"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value="Adicionar Lixeira"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -202,7 +202,7 @@
     <Component class="javax.swing.JButton" name="btnTelaAddLixo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Projeto\src\main\java\IMG\addLixo.png"/>
+          <Image iconType="2" name="C:\Users\&#xe9; o r&apos;s\Desktop\addLixo.png"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value="Adicionar lixo"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">

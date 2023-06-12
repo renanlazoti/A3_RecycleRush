@@ -13,7 +13,7 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
     private String driver = "com.mysql.cj.jdbc.Driver";
-    private String url = "jdbc:mysql://localhost:3306/db_lixo?useTimezone=true&serverTimezone=UTC ";
+    private String url = "jdbc:mysql://localhost:3306/db_recyclerush?useTimezone=true&serverTimezone=UTC ";
     private String user = "root";
     private String password = "1234";
 		

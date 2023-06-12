@@ -280,11 +280,12 @@ public class AddLixo extends javax.swing.JFrame {
                 pst.setString(1, txtNomeLixo.getText());
                 ResultSet rs = pst.executeQuery();
                 limparCampos();
+                txtIdLixo.setText(null);
                 if (rs.next()) {
-                    txtIdLixo.setText(rs.getString("id"));
+                    txtIdLixo.setText(rs.getString("idLixo"));
                     cboLixo.setSelectedItem(rs.getString("tipoLixo"));
-                    txtCaminhoImg.setText(rs.getString("caminhoImg"));
-                    File imgsave = new File(rs.getString("caminhoImg"));
+                    txtCaminhoImg.setText(rs.getString("imgLixo"));
+                    File imgsave = new File(rs.getString("imgLixo"));
                     tamanho = (int)  imgsave.length();
                     Image foto = ImageIO.read(imgsave).getScaledInstance(lblImagem.getWidth(), lblImagem.getHeight(),Image.SCALE_SMOOTH);
                     lblImagem.setIcon(new ImageIcon(foto));
@@ -316,7 +317,7 @@ public class AddLixo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Informe o caminho da imagem do lixo");
             txtCaminhoImg.requestFocus();
         }else {
-            String create = "insert into tb_lixo(nomeLixo, tipolixo, caminhoimg) values (?,?,?)";
+            String create = "insert into tb_lixo(nomeLixo, tipolixo, imgLixo) values (?,?,?)";
             try {
                 bfi = ImageIO.read(icon);
                 URL url = getClass().getResource("../");
@@ -352,7 +353,7 @@ public class AddLixo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Informe o caminho da imagem do lixo");
                 txtCaminhoImg.requestFocus();
         } else {
-            String update = "update tb_lixo set nomeLixo=?, tipoLixo=?, caminhoImg=? where idLixo=?";
+            String update = "update tb_lixo set nomeLixo=?, tipoLixo=?, imgLixo=? where idLixo=?";
             try {
                 Connection con = cf.conectar();
                 PreparedStatement pst = con.prepareStatement(update);

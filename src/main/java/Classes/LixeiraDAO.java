@@ -26,7 +26,7 @@ public class LixeiraDAO {
                 int id = rs.getInt("idLixeira");
                 String corLixeira = rs.getString("corLixeira");
                 String tipoLixeira = rs.getString("tipoLixeira");
-                String caminhoImg = rs.getString("caminhoImg");
+                String caminhoImg = rs.getString("imgLixeira");
                 Lixeira bin = new Lixeira(corLixeira,tipoLixeira, caminhoImg);
                 ret.add(bin);
             }

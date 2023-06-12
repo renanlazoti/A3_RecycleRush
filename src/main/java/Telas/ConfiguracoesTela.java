@@ -436,8 +436,8 @@ public class ConfiguracoesTela extends javax.swing.JFrame {
 				pst.setString(5, txtIdUsuario.getText());
 				pst.executeUpdate();
 				JOptionPane.showMessageDialog(null, "Usuário alterado com Sucesso!");
-                                limparCampos();
-                                txtIdUsuario.setText(null);
+                                txtSenhaUsuario.setEditable(false);
+                                chkSenha.setSelected(false);
 				con.close();
                         }catch (SQLIntegrityConstraintViolationException ex) {
 				JOptionPane.showMessageDialog(null, "Login em uso.\nEscolha outro login.");

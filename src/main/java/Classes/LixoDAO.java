@@ -23,10 +23,10 @@ public class LixoDAO {
             PreparedStatement ps = c.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
         while (rs.next()){
-            int id = rs.getInt("id");
+            int id = rs.getInt("idLixo");
             String nomeLixo = rs.getString("nomeLixo");
             String tipoLixo = rs.getString("tipoLixo");
-            String caminhoImg = rs.getString("caminhoImg");
+            String caminhoImg = rs.getString("imgLixo");
             Lixo trash = new Lixo(nomeLixo, tipoLixo, caminhoImg);
             ret.add(trash);
         }

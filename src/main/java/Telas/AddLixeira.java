@@ -347,8 +347,8 @@ public class AddLixeira extends javax.swing.JFrame {
                     if (rs.next()) {
                         txtIdLixeira.setText(rs.getString("idLixeira"));
                         cboTipo.setSelectedItem(rs.getString("tipoLixeira"));
-                        txtCaminhoImg.setText(rs.getString("caminhoImg"));
-                        File imgsave = new File(rs.getString("caminhoImg"));
+                        txtCaminhoImg.setText(rs.getString("imgLixeira"));
+                        File imgsave = new File(rs.getString("imgLixeira"));
                         tamanho = (int)  imgsave.length();
                         Image foto = ImageIO.read(imgsave).getScaledInstance(lblImagem.getWidth(), lblImagem.getHeight(),Image.SCALE_SMOOTH);
                         lblImagem.setIcon(new ImageIcon(foto));
@@ -381,7 +381,7 @@ public class AddLixeira extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Informe o caminho da imagem da lixeira");
                 txtCaminhoImg.requestFocus();
         } else {
-            String create = "insert into tb_lixeira(tipoLixeira, corLixeira, caminhoImg) values (?,?,?)";
+            String create = "insert into tb_lixeira(tipoLixeira, corLixeira, imgLixeira) values (?,?,?)";
             try {
                 bfi = ImageIO.read(icon);
                 URL url = getClass().getResource("../");
@@ -417,7 +417,7 @@ public class AddLixeira extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Informe o caminho da imagem da lixeira");
                 txtCaminhoImg.requestFocus();
         } else {
-            String update = "update tb_lixeira set corLixeira=?, tipoLixeira=?, caminhoImg=? where idLixeira=?";
+            String update = "update tb_lixeira set corLixeira=?, tipoLixeira=?, imgLixeira=? where idLixeira=?";
             try {
                 Connection con = cf.conectar();
                 PreparedStatement pst = con.prepareStatement(update);
