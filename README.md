@@ -9,7 +9,7 @@
 ## INSTRUÇÕES PARA INSTALAÇÃO:
 ### - Faça o download de todos os arquivos dentro desse repositório.
 ### - Crie o banco de dados, todas as tabelas existentes e o usuário admin que deve ser o primeiro a ser inserido dentro do script.
-### - Abra o projeto no NetBeans e adicione todas os icons(que estão dentro da pasta "Imagens") aos botões, através de external image.
+### - Abra o projeto no NetBeans e adicione todas os icons(que estão dentro da pasta "Imagens") nos botões e labels, através de external image.
 ## AS TELAS DEVEM FICAR ASSIM:
 ![login](https://github.com/renanlazoti/A3_RecycleRush/assets/87093301/5c81b046-872a-4cb1-9385-44d764371de5)
 ![menu](https://github.com/renanlazoti/A3_RecycleRush/assets/87093301/f209bd77-58e9-4c6e-9de6-2abdb77f2d3d)
